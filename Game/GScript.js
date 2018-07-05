@@ -54,7 +54,7 @@ if(Timer%100==0){
         MeteorB[i].x = MeteorB[i].x + MeteorB[i].dx;
         MeteorB[i].y = MeteorB[i].y + MeteorB[i].dy;
 
-        //столкновение стенами
+        //столкновение со стенами
         if (MeteorB[i].x >= 1750 || MeteorB[i].x < 105) MeteorB[i].dx = -MeteorB[i].dx;
 
         //столкновение с полом
@@ -92,7 +92,6 @@ function render() {
 }
 
 
-//NEW
 //Класс - это функция с this.var_name вместо var var_name:
 function meteor(x,y,dx,dy) {
     this.image = new Image();
